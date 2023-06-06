@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletería</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="icon" href="../img/codoacodo.png" type="image/x-icon"/>
+</head>
+<body>
+
+    <header>
+        <h1 class="conoce">BOLETERÍA</h1>
+    </header>
+    <main class="fondo-img">
+        
+        <div>
+            <h2 class="conoce">UBICACIÓN</h2>
+            
+            <p class="mas">Tucumán 1171, Ciudad Autónoma de Buenos Aires.</p>
+        </div>
+        <div>
+            <h2 class="conoce">FECHA</h2>
+            <p class="mas">Mes: OCTUBRE</p>
+            <P class="mas">Días: 25,26 y 30 </P>
+        </div>
+        <div>
+            <h2 class="conoce">HORARIOS</h2>
+            <P class="mas">Lunes 25 y Martes 26 de 9 a 20H</P>
+            <p class="mas">Sábado 30 de 10 a 14H</p>
+        </div>
+        <div>
+            <h1 class="conoce">COMPRA TUS ENTRADAS</h1>
+        </div>
+        <div class="tickets">
+            <div class="estudiante">
+                <h2>Estudiante</h2>
+                <p>Tienen un descuento</p>
+                <h2>80%</h2>
+                <p>* presentar documentación</p>
+            </div>
+            <div class="estudiante">
+                <h2>Trainee</h2>
+                <p>Tienen un descuento</p>
+                <h2>50%</h2>
+                <p>* presentar documentación</p>
+            </div>
+            <div id="junior">
+                <h2>Junior</h2>
+                <p>Tienen un descuento</p>
+                <h2>15%</h2>
+                <p>* presentar documentación</p>
+            </div>
+        </div>
+        <h4 class="tickets">VENTA</h4>
+        <h1 class="tickets">VALOR DE TICKET $200</h1>
+        <form id="form">
+            <div class="tickets-form">
+                <input type="text" class="casillero" name="Nombre" placeholder="Nombre" id="name" >
+                <input type="text" class="casillero" name="Apellido" placeholder="Apellido" id="apellido" >
+                <input type="email" class="casillero" name="Email" placeholder="E-mail" id="email">
+            </div>
+                <div class="casillero-cantidad">
+                    <label for="cantInput" class="casillero-1">Cantidad</label>
+                    <input id="cantidad" type="number" class="casillero-1" name="Cantidad"
+                  placeholder="Cantidad" value="" required>
+                </div>
+                <div class="casillero-categoria">
+                    <label for="catSelect" class="casillero-2">Categoria</label>
+                    <select name="Categoria" class="casillero-2" id="categoria">
+                        <option value="Ninguna" selected>Ninguna</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select>
+                </div>
+
+                <output class="ticketsOutput"><span class="tickets-pagar" id="txtPagar">Total a pagar: </span></output>
+                <div class="final">
+                    <button id="ticketsBorrar" type="reset" class="boton-borrar" name="Borrar" id="delete" type="reset" onclick="borrarFunc()">Borrar</button>
+                    <button class="boton-resumen" name="Resumen" id="resumen" type="button" onclick="resumenFunc()">Resumen</button>
+                </div>
+            </div>
+        </form>
+            
+       
+    </main>
+    <footer>
+         <form> 
+            <a href="../index.html">Volver</a>
+        </form>
+    </footer>
+ <script src="../index.js"></script>
+</body>
+</html>
